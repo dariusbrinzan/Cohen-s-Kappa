@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the dataset
-file_path = "air_temp_final.csv"  # Update the path if necessary
+file_path = "sampled_data.csv"  # Update the path if necessary
 data = pd.read_csv(file_path)
 
 # Select columns for the two evaluators
