@@ -1,14 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load the evaluator data
 input_file = "evaluator_data.csv"
 data = pd.read_csv(input_file)
 
-# Calculate the differences
 data['difference'] = data['evaluator1'] - data['evaluator2']
 
-# Box plot
 plt.figure(figsize=(8, 6))
 plt.boxplot(data['difference'], vert=False, patch_artist=True, 
             boxprops=dict(facecolor="lightblue", color="blue"),
